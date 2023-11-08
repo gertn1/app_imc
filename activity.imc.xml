@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp">
+
+            <TextView
+                android:id="@+id/peso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="Coloque seu peso em (Kg)"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_input_peso"
+                android:layout_width="131dp"
+                android:layout_height="27dp"
+                android:background="#AEBAC5"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/altura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coloque sua altura em (m)"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editText_input_altura"
+                android:layout_width="131dp"
+                android:layout_height="match_parent"
+                android:background="#AEBAC5"
+                android:ems="10"
+                android:inputType="text"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Button_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calcular" />
+
+        <TextView
+            android:id="@+id/textView_imc"
+            android:layout_width="126dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="100dp"
+            android:background="#AEBAC5"
+            android:textSize="24sp" />
+    </TableRow>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
